@@ -30,7 +30,8 @@ class MyApp extends StatelessWidget {
           create: (context) => DeleteCubit(),
         ),
       ],
-      child: const MaterialApp(
+      child: MaterialApp(
+        theme: ThemeData(brightness: Brightness.dark),
         debugShowCheckedModeBanner: false,
         home: PostScreen(),
       ),
